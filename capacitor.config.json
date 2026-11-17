@@ -1,0 +1,8 @@
+{
+  "appId": "com.meowcode0.keepsy",
+  "appName": "Keepsy",
+  "webDir": "dist",
+  "android": {
+    "allowMixedContent": false
+  }
+}

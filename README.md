@@ -26,6 +26,19 @@ reminder details never leave the device.
 
 ---
 
+## Install the Android APK (real on-device reminders)
+
+Every push to `main` also builds an Android APK via `.github/workflows/build-apk.yml`:
+
+1. Open the repo's **Actions** tab → click the latest **Build Keepsy Android APK** run.
+2. Under **Artifacts**, download **Keepsy-android-apk** and unzip it → `app-debug.apk`.
+3. Copy it to your Android phone, tap it, allow "install unknown apps" for your file manager, install.
+4. First launch: allow **Notifications** when Keepsy asks. That's it.
+
+**Test a closed-app reminder:** create a reminder due in 2 minutes → close the app completely
+(swipe it away) → lock the phone → wait. The notification banner arrives on its own — it is
+scheduled on the device itself; no server, no account, no internet needed.
+
 ## Run it (for developers)
 
 ```bash

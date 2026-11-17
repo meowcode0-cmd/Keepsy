@@ -1,5 +1,6 @@
 /* Keepsy — application entry: shell wiring, drawer, routes, global actions. */
 import { store } from './core/store.js';
+import { initNativeNotifications } from './core/native-notify.js';
 import { go, parse, route, start, onBaseChange, rememberScroll, recallScroll, current } from './core/router.js';
 import { ic, openDrawer, closeDrawer, toggleDrawer, openSheet, toast, closeAllLayers, closeAllSheets } from './core/ui.js';
 import { esc, todayISO, pluralize, initials, fmtDate } from './core/format.js';
@@ -27,6 +28,7 @@ window.addEventListener('appinstalled', () => { window.keepsyInstallPrompt = nul
 
 store.init();
 store.syncNotifications();
+initNativeNotifications(); // Android only: schedules on-device reminders; web/iOS no-op
 
 const view = document.getElementById('view');
 const topbar = document.getElementById('topbar');
