@@ -1,0 +1,23 @@
+{
+  "name": "Keepsy — your life, kept",
+  "short_name": "Keepsy",
+  "description": "A quiet, local-first space that remembers what you own, buy, use, plan and need to revisit.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#F4EBDD",
+  "theme_color": "#192A3B",
+  "lang": "en",
+  "categories": ["lifestyle", "productivity", "utilities"],
+  "icons": [
+    { "src": "./icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "./icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Add a memory", "short_name": "Add", "url": "./index.html#/?add=1" },
+    { "name": "Timeline", "short_name": "Timeline", "url": "./index.html#/timeline" },
+    { "name": "Reminders", "short_name": "Reminders", "url": "./index.html#/reminders" }
+  ]
+}
